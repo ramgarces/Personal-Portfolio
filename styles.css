@@ -59,6 +59,22 @@ a {
     background-color: rgba(57, 0, 83);
 }
 
+@media screen and (max-width: 485px) {
+    #navbar {
+        justify-content: center;
+    }
+
+    #nav-list a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    #nav-list a {
+        padding: 0.5rem;
+    }
+}
+
 /* Welcome section css */
 
 #welcome-section {
@@ -107,6 +123,12 @@ a {
     }
 }
 
+@media screen and (max-width: 450px) {
+    #welcome-section h1, p {
+        font-size: 1.5rem;
+    }
+}
+
 /* Projects section */
 
 #projects-section {
@@ -114,6 +136,8 @@ a {
     padding: 10rem 2rem;
     background: rgba(44, 71, 170, 0.8);
 }
+
+
 
 #projects-header {
     max-width: 640px;
@@ -166,6 +190,21 @@ a {
     font-weight: bolder;
 }
 
+@media screen and (max-width: 400px) {
+    #projects-section {
+        width: auto;
+    }
+
+    #projects-grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-title {
+        font-size: 1rem;
+    }
+}
+
 /* Contact me section */
 
 #contact-section {
@@ -201,6 +240,7 @@ a {
     color: #fff;
 }
 
+
 .fab {
     margin-right: 0.5rem;
 }
@@ -218,6 +258,16 @@ a {
     transform: translatey(8px);
 }
 
+@media screen and (max-width: 560px) {
+    #socials {
+        flex-direction: column;
+    }
+
+    .contact-link {
+        margin: 2rem;
+    }
+}
+
 /* Footer section */
 
 #footer {
@@ -230,5 +280,11 @@ a {
     border-top: 0.3rem solid rgb(91, 0, 165);
     font-size: 1.5rem;
     font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+    #footer p {
+        font-size: 0.9rem;
+    }
 }
 
